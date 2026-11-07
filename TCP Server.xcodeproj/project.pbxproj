@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A547D64D309F27480000746E /* ServerSession.m in Sources */ = {isa = PBXBuildFile; fileRef = A547D64C309F27480000746E /* ServerSession.m */; };
+		A547D650309F275E0000746E /* ServerListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A547D64F309F275E0000746E /* ServerListViewController.m */; };
+		A547D652309F27870000746E /* ServerDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A547D651309F27870000746E /* ServerDetailViewController.m */; };
+		A547D656309F27980000746E /* MainWindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = A547D655309F27980000746E /* MainWindowController.m */; };
 		B29D98571B736B6B008B321F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D98561B736B6B008B321F /* AppDelegate.m */; };
 		B29D985A1B736B6B008B321F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D98591B736B6B008B321F /* main.m */; };
 		B29D985C1B736B6B008B321F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B29D985B1B736B6B008B321F /* Assets.xcassets */; };
@@ -15,11 +19,17 @@
 		B29D986C1B736BDF008B321F /* AppController.m in Sources */ = {isa = PBXBuildFile; fileRef = B29D986B1B736BDF008B321F /* AppController.m */; };
 		B29D986E1B737A6F008B321F /* Security.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29D986D1B737A6F008B321F /* Security.framework */; };
 		B29D98701B737A82008B321F /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B29D986F1B737A82008B321F /* Cocoa.framework */; };
-		B2D59AD824224DF800C30182 /* myWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2D59AD624224DF800C30182 /* myWindow.xib */; };
-		B2D59ADB24224E5900C30182 /* WindowController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2D59ADA24224E5900C30182 /* WindowController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A547D64B309F27470000746E /* ServerSession.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerSession.h; sourceTree = "<group>"; };
+		A547D64C309F27480000746E /* ServerSession.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerSession.m; sourceTree = "<group>"; };
+		A547D64E309F275E0000746E /* ServerListViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerListViewController.h; sourceTree = "<group>"; };
+		A547D64F309F275E0000746E /* ServerListViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerListViewController.m; sourceTree = "<group>"; };
+		A547D651309F27870000746E /* ServerDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ServerDetailViewController.m; sourceTree = "<group>"; };
+		A547D653309F27870000746E /* ServerDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ServerDetailViewController.h; sourceTree = "<group>"; };
+		A547D654309F27980000746E /* MainWindowController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainWindowController.h; sourceTree = "<group>"; };
+		A547D655309F27980000746E /* MainWindowController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainWindowController.m; sourceTree = "<group>"; };
 		B29D98521B736B6B008B321F /* TCP Server.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TCP Server.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B29D98551B736B6B008B321F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		B29D98561B736B6B008B321F /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -33,9 +43,6 @@
 		B29D986B1B736BDF008B321F /* AppController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppController.m; sourceTree = "<group>"; };
 		B29D986D1B737A6F008B321F /* Security.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Security.framework; path = System/Library/Frameworks/Security.framework; sourceTree = SDKROOT; };
 		B29D986F1B737A82008B321F /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		B2D59AD724224DF800C30182 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = TCPServer/Base.lproj/myWindow.xib; sourceTree = "<group>"; };
-		B2D59AD924224E4300C30182 /* WindowController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WindowController.h; sourceTree = "<group>"; };
-		B2D59ADA24224E5900C30182 /* WindowController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WindowController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,14 +83,19 @@
 				B29D98561B736B6B008B321F /* AppDelegate.m */,
 				B29D986A1B736BDF008B321F /* AppController.h */,
 				B29D986B1B736BDF008B321F /* AppController.m */,
-				B2D59AD924224E4300C30182 /* WindowController.h */,
-				B2D59ADA24224E5900C30182 /* WindowController.m */,
 				B29D985B1B736B6B008B321F /* Assets.xcassets */,
 				B29D985D1B736B6B008B321F /* MainMenu.xib */,
-				B2D59AD624224DF800C30182 /* myWindow.xib */,
 				B29D98691B736B84008B321F /* Socket */,
 				B29D98601B736B6B008B321F /* Info.plist */,
 				B29D98581B736B6B008B321F /* Supporting Files */,
+				A547D64B309F27470000746E /* ServerSession.h */,
+				A547D64C309F27480000746E /* ServerSession.m */,
+				A547D64E309F275E0000746E /* ServerListViewController.h */,
+				A547D64F309F275E0000746E /* ServerListViewController.m */,
+				A547D651309F27870000746E /* ServerDetailViewController.m */,
+				A547D653309F27870000746E /* ServerDetailViewController.h */,
+				A547D654309F27980000746E /* MainWindowController.h */,
+				A547D655309F27980000746E /* MainWindowController.m */,
 			);
 			path = TCPServer;
 			sourceTree = "<group>";
@@ -164,7 +176,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				B29D985C1B736B6B008B321F /* Assets.xcassets in Resources */,
-				B2D59AD824224DF800C30182 /* myWindow.xib in Resources */,
 				B29D985F1B736B6B008B321F /* MainMenu.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -176,9 +187,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B2D59ADB24224E5900C30182 /* WindowController.m in Sources */,
+				A547D652309F27870000746E /* ServerDetailViewController.m in Sources */,
+				A547D650309F275E0000746E /* ServerListViewController.m in Sources */,
 				B29D98681B736B80008B321F /* GCDAsyncSocket.m in Sources */,
 				B29D985A1B736B6B008B321F /* main.m in Sources */,
+				A547D64D309F27480000746E /* ServerSession.m in Sources */,
+				A547D656309F27980000746E /* MainWindowController.m in Sources */,
 				B29D98571B736B6B008B321F /* AppDelegate.m in Sources */,
 				B29D986C1B736BDF008B321F /* AppController.m in Sources */,
 			);
@@ -193,14 +207,6 @@
 				B29D985E1B736B6B008B321F /* Base */,
 			);
 			name = MainMenu.xib;
-			sourceTree = "<group>";
-		};
-		B2D59AD624224DF800C30182 /* myWindow.xib */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B2D59AD724224DF800C30182 /* Base */,
-			);
-			name = myWindow.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -292,6 +298,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TCPServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = voelkerb.TCPServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
@@ -304,6 +311,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = TCPServer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				MACOSX_DEPLOYMENT_TARGET = 12.0;
 				PRODUCT_BUNDLE_IDENTIFIER = voelkerb.TCPServer;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};

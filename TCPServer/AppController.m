@@ -8,26 +8,23 @@
 
 #import "AppController.h"
 
-
 @implementation AppController
 
-@synthesize sessionWindowControllers, currentWindowController;
-
-- (id)init {
-  if (self = [super init]) {
-    self.sessionWindowControllers = [[NSMutableArray alloc] initWithCapacity:1];
-    self.currentWindowController = [[WindowController alloc] initWithWindowNibName:@"myWindow"];
-    [self.sessionWindowControllers addObject:currentWindowController];
-    [self.currentWindowController showWindow:self];
-  }
-  return self;
+- (void)showMainWindow {
+    if (!self.mainWindowController) {
+        self.mainWindowController = [[MainWindowController alloc] init];
+    }
+    [self.mainWindowController showWindow:nil];
+    [NSApp activateIgnoringOtherApps:YES];
 }
 
+- (IBAction)makeNewWindow:(id)sender {
+    [self showMainWindow];
+    [self.mainWindowController addServer];
+}
 
-- (void)makeNewWindow:(id)sender {
-  self.currentWindowController = [[WindowController alloc] initWithWindowNibName:@"myWindow"];
-  [self.sessionWindowControllers addObject:currentWindowController];
-  [self.currentWindowController showWindow:self];
+- (void)stopAllServers {
+    [self.mainWindowController stopAllServers];
 }
 
 @end
