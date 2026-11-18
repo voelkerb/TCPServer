@@ -20,6 +20,9 @@ struct TCPServerApp: App {
             ContentView()
                 .environment(store)
         }
+        #if os(macOS)
+        .defaultSize(width: 980, height: 760)
+        #endif
         .commands {
             CommandGroup(replacing: .newItem) {
                 Button("New Server") { store.addServer() }

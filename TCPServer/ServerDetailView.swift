@@ -83,7 +83,7 @@ struct ServerDetailView: View {
         content
         .dismissKeyboardOnTap()
         #if os(macOS)
-        .frame(minWidth: 420, maxWidth: .infinity, maxHeight: .infinity)
+        .frame(minWidth: 520, maxWidth: .infinity, minHeight: 700, maxHeight: .infinity)
         #else
         .frame(maxWidth: .infinity, maxHeight: .infinity)
         #endif

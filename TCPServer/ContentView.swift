@@ -64,7 +64,7 @@ struct ContentView: View {
         }
         #endif
         #if os(macOS)
-        .frame(minHeight: 480)
+        .frame(minHeight: 700)
         #endif
     }
 }
