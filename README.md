@@ -1,7 +1,7 @@
-# Simple TCP Server GUI
+# Acceptor – Simple TCP Server GUI
 
-A simple GUI to host to TCP Servers and send/receive text based messages. 
+A simple SwiftUI app (macOS, iPhone, iPad) to host TCP servers and send/receive text based messages. JSON payloads are shown as a tree, with a raw/processed toggle and text export.
 
   <img src="/docu/figures/TCPServer.jpg">
 
-Also see [TCP Client](https://github.com/voelkerb/TCPClient).
+Also see [Initiator (TCP Client)](https://github.com/voelkerb/TCPClient).
